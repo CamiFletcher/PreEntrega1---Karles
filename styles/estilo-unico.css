@@ -1,0 +1,156 @@
+/*header*/
+#logo{
+    height: 80px;
+    width: 80px;
+}
+
+.lookabook{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-size: 80px;
+    -webkit-text-stroke-color: #FFB200;
+    -webkit-text-stroke-width: 0.5px;
+    font-family: "Raleway", sans-serif;
+    margin: 20px;
+}
+
+/*estilo general*/
+html{
+    background-color: #D91656;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: #FFB200;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.lista-horizontal{
+    display: flex;
+    justify-content: space-around; /* Distribuye los items a lo largo */
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #D91656; /* color de fondo de la barra */
+    height: 60px; /* alto de la barra */
+    width: 100vw; /* ocupa todo el ancho de la ventana */
+}
+
+h2{
+    font-family: "Archivo", sans-serif;
+    margin: 20px;
+}
+
+h3{
+    font-family: "Archivo", sans-serif;
+    align-items: center;
+}
+
+p{
+    font-family: "Quicksand", sans-serif;
+    margin: 20px;
+}
+
+.contenido{
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*footer*/
+#redes{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+}
+
+.redes-tamano{
+    height: 50px;
+    width: 50px;
+}
+
+/*Página 1 - Index*/
+#imagen-inicial{
+    width: 100vw;
+    height: 90vh; 
+    display: block;
+}
+
+.tamano-libros{
+    height: 250px;
+    width: 150px;
+}
+
+#libros{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    justify-content: center;
+}
+
+#nombres{ /*CAMBIAR PORFAVOR*/
+    display: flex;
+    align-items: center;
+    gap: 210px;
+    justify-content: center;
+}
+
+#precios{ /*CAMBIAR PORFAVOR*/
+    display: flex;
+    align-items: center;
+    gap: 325px;
+    justify-content: center;
+}
+
+/*Página 2 - Contacto*/
+#email-contacto{
+    display: flex;
+    gap: 20px;
+} 
+
+#carta-pag2{
+    height: 50px;
+    width: 50px;
+}
+
+/*Página 3 & 4 - Envíos & Preguntas*/
+.pregunta{
+    height: 30px;
+    width: 30px;
+}
+
+.preguntas{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+/*Página 5 - Nosotros*/
+#frase-nosotros{
+    font-size: 22px;
+    font-family: "Archivo", sans-serif;
+    text-align: center;
+}
+
+#imagenes{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+}
+
+#ubicacion{
+    width: 400px;
+}

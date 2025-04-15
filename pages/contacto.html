@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/estilo-unico.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>LookABook - Contacto</title>
+</head>
+
+<body>
+    <header>
+        <section class="contenido">
+            <section class="lookabook">
+                <a href="../index.html">
+                    <img src="../multimedia/logo.jpg" alt="Logo de LookABook" id="logo">
+                </a>
+                <h1>LookABook</h1>
+            </section>
+            <nav>
+                <ul class="lista-horizontal">
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./envios.html">Envíos</a></li>
+                    <li><a href="./preguntas.html">Preguntas</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="contenido">
+            <h2>Contacto</h2>
+
+            <section id="email-contacto">
+                <img src="../multimedia/carta.png" alt="Mensaje tipo carta" id="carta-pag2">
+                <p>lookabook@gmail.com</p>
+            </section>
+
+            <form action="/submit" method="post">
+                <label for=”nombre”>Nombre:</label>
+                <input type=”text” name=”nombre” id=”nombre”>
+
+                <label for="email">Email:</label>
+                <input type="email" name=”email” id=”email”>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" name="telefono" id="telefono">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje"></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section id="redes" class="contenido">
+            <a href="https://www.linkedin.com/"><img src="../multimedia/linkedin-icon.png" alt="Linkedin" class="redes-tamano"></a>
+            <a href="https://www.instagram.com/"><img src="../multimedia/instagram-icon.png" alt="Instagram" class="redes-tamano"></a>
+            <a href="https://www.facebook.com/"><img src="../multimedia/facebook-icon.png" alt="Facebook" class="redes-tamano"></a>
+        </section>
+    </footer>
+</body>
+
+</html>
