@@ -37,23 +37,44 @@ body{
 
 .lista-horizontal{
     display: flex;
-    justify-content: space-around; /* Distribuye los items a lo largo */
+    justify-content: space-around; 
     align-items: center;
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #D91656; /* color de fondo de la barra */
-    height: 60px; /* alto de la barra */
-    width: 100vw; /* ocupa todo el ancho de la ventana */
+    height: 60px;
+    width: 100vw; 
+}
+
+.lista-horizontal li a{
+    display: block;
+    padding: 15px 187px; 
+    color: #FFB200;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    border: 3px solid #FFB200; 
+    background-color: black;
+    transition: background-color 0.3s;
+}
+
+.lista-horizontal li a:hover {
+    background-color: #ffd966;   
+    color: #000;                 
+    border-color: #000;          
+    box-shadow: 0 0 10px #ffd966; 
 }
 
 h2{
-    font-family: "Archivo", sans-serif;
+    font-family: "Raleway", sans-serif;
     margin: 20px;
 }
 
 h3{
-    font-family: "Archivo", sans-serif;
+    font-family: "Raleway", sans-serif;
     align-items: center;
 }
 
@@ -95,23 +116,15 @@ p{
 
 #libros{
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 200px;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px; 
 }
 
-#nombres{ /*CAMBIAR PORFAVOR*/
-    display: flex;
-    align-items: center;
-    gap: 210px;
-    justify-content: center;
-}
-
-#precios{ /*CAMBIAR PORFAVOR*/
-    display: flex;
-    align-items: center;
-    gap: 325px;
-    justify-content: center;
+.libro {
+    text-align: center;
+    max-width: 180px;
 }
 
 /*Página 2 - Contacto*/
@@ -142,6 +155,10 @@ p{
     font-size: 22px;
     font-family: "Archivo", sans-serif;
     text-align: center;
+}
+
+.img-nosotros{
+    margin-bottom: 20px;
 }
 
 #imagenes{
