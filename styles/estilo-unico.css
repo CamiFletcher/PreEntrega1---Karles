@@ -11,7 +11,7 @@
 
 h1{
     font-size: 80px;
-    -webkit-text-stroke: 0.5px #FFB200;
+    -webkit-text-stroke: 1.5px #FFB200;
 }
 
 /*estilo general*/
@@ -20,6 +20,7 @@ html{
 }
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Raleway", sans-serif;
@@ -31,19 +32,23 @@ main{
 
 .lista-horizontal{
     display: flex;
-    justify-content: space-around; 
+    /*justify-content: space-between; */
     list-style: none;
     align-items: center;
     height: 60px;
     padding: 10px 0;
 }
 
+.lista-horizontal li {
+    width: 25%;
+}
+
 .lista-horizontal li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
-    width: 24.4vw; /*CAMBIAR*/
+    height: 60px;
+    width: 100%; 
     color: #FFB200;
     text-decoration: none;
     font-weight: 700;
@@ -136,7 +141,15 @@ p{
 .preguntas{
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 2px; 
+}
+
+.preguntas p {
+    margin: 0; /* elimina espacio dentro del bloque de la pregunta */
+}
+
+.respuesta {
+    margin: 2px 0 20px 0; /* margen más pegado arriba, normal abajo */
 }
 
 /*Página 5 - Nosotros*/
