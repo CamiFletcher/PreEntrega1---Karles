@@ -122,14 +122,44 @@ p{
 }
 
 /*Página 2 - Contacto*/
-#email-contacto{
+#contacto-contenedor {
     display: flex;
     gap: 20px;
-} 
-
-#carta-pag2{
+    align-items: flex-start;
+    padding: 0 20px;
+}
+  
+#columna-izquierda {
+    display: flex;
+    gap: 20px;
+    width: 20%;
+    margin-left: 20px;
+}
+  
+#carta-pag2 {
     height: 50px;
     width: 50px;
+}
+  
+#columna-derecha {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+#columna-derecha input,
+#columna-derecha textarea {
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+  
+#columna-derecha textarea {
+    min-height: 150px;
 }
 
 /*Página 3 & 4 - Envíos & Preguntas*/
