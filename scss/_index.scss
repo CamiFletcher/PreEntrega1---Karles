@@ -1,0 +1,48 @@
+.main-paginaindex{
+    #imagen-inicial{
+        width: 100%; 
+        height: 80vh; 
+        display: block;
+        object-fit: cover;
+    }
+    #libros{
+        display: flex;
+        justify-content: center;
+        gap: 150px;
+        flex-wrap: wrap;
+        margin-top: 40px; 
+        .libro{
+            text-align: center;
+            max-width: 180px;
+            .tamano-libros{
+                height: 250px;
+                width: 150px;
+                }
+        }
+    }
+    @include celular{
+        #imagen-inicial{
+            height: 50vh;
+        }
+        .contenido{
+            padding: 10px;
+            h2{
+                margin: 10px 0;
+            }
+            #libros{
+                gap: 20px;
+                margin-top: 10px;
+                .libro{
+                    max-width: 130px;
+                    .tamano-libros{
+                        height: 180px;
+                        width: 110px;
+                    }   
+                    p{
+                        margin: 5px 0;
+                    }
+                } 
+            }
+        }
+    }
+}

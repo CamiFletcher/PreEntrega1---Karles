@@ -1,0 +1,84 @@
+.main-paginacontacto{
+    #contacto-contenedor{
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        padding: 0 20px;
+        @include celular{
+            flex-direction: column;
+            padding: 0 10px;
+        }
+        #columna-izquierda{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 40%;
+            margin-left: 20px;
+            gap: 10px;
+            #carta-pag2{
+                height: 50px;
+                width: 50px;
+            }
+            @include celular{
+                width: 100%;
+                margin-left: 0;
+                justify-content: flex-start;
+            }
+        }
+        #columna-derecha{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 500px;
+            @include celular{
+                width: 100%;
+                margin-left: 0;
+            }
+            .form-grid{
+                flex: 1;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto auto 1fr auto;
+                gap: 20px;
+                height: 100%;
+                .form-group,.full-width.textarea-group{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .full-width{
+                    grid-column: span 2;
+                }
+                input,textarea{
+                    padding: 15px;
+                    font-size: 1.1rem;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+                textarea{
+                    flex: 1;
+                    resize: vertical;
+                    min-height: 150px;
+                }
+                #boton-enviar{
+                    background-color: black;
+                    color: #FFB200;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: background-color 0.3s, color 0.3s;
+                    border: none;
+                    padding: 15px;
+                    font-size: 1.1rem;
+                    border-radius: 5px;
+                    &:hover{
+                        background-color: #ffd966;
+                        color: black;
+                        border: 3px solid black;
+                    }
+                }
+            }
+        }
+    }
+}
