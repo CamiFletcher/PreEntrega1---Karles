@@ -17,7 +17,11 @@
             .tamano-libros{
                 height: 250px;
                 width: 150px;
+                transition: transform 0.5s ease;
+                &:hover {
+                    transform: scale(1.2);
                 }
+            }
         }
     }
     @include celular{
@@ -37,6 +41,10 @@
                     .tamano-libros{
                         height: 180px;
                         width: 110px;
+                        transition: transform 0.5s ease;
+                        &:hover {
+                            transform: scale(1.2);
+                        }
                     }   
                     p{
                         margin: 5px 0;
