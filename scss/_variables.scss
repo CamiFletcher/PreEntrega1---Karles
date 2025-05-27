@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
+$color-primario: #FFB200;
+$color-secundario: #D91656;
+$color-nav-hoover: #ffd966;
+$color-borde: black;
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -14,11 +19,11 @@ body{
     font-family: "Raleway", sans-serif;
     display: flex;
     flex-direction: column;
-    background-color: #D91656;
+    background-color: $color-secundario;
 }
 
 main{
-    background-color: #FFB200;
+    background-color: $color-primario;
     flex: 1;
 }
 

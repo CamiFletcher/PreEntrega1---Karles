@@ -63,8 +63,8 @@
                     min-height: 150px;
                 }
                 #boton-enviar{
-                    background-color: black;
-                    color: #FFB200;
+                    background-color: $color-borde;
+                    color: $color-primario;
                     font-weight: bold;
                     cursor: pointer;
                     transition: background-color 0.3s, color 0.3s;
@@ -73,9 +73,9 @@
                     font-size: 1.1rem;
                     border-radius: 5px;
                     &:hover{
-                        background-color: #ffd966;
-                        color: black;
-                        border: 3px solid black;
+                        background-color: $color-nav-hoover;
+                        color: $color-borde;
+                        border: 3px solid $color-borde;
                     }
                 }
             }

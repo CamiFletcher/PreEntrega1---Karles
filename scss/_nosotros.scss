@@ -11,25 +11,25 @@
             margin: 0 auto;
         }
         #accordionExample{
-            background-color: #FFB200;
+            background-color: $color-primario;
             padding-bottom: 20px;
             .accordion-item{
-                background-color: #FFB200;
+                background-color: $color-primario;
                 border: none;
                 &:last-child{
                     margin-bottom: 15px;
                 }
             }
             .accordion-button{
-                background-color: black;
-                color: #FFB200;
+                background-color: $color-borde;
+                color: $color-primario;
                 font-weight: bold;
                 box-shadow: none;
                 &:not(.collapsed){
-                    background-color: #D91656;
-                    color: black;
+                    background-color: $color-secundario;
+                    color: $color-borde;
                     box-shadow: none;
-                    border: 2px solid black;
+                    border: 2px solid $color-borde;
                 }
             }
         }
